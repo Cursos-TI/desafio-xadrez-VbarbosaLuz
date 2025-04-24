@@ -2,10 +2,10 @@
 
 int main (){
 
-    int Torre = 1;
-    int bisbo = 1;
-    int Rainha;
+    int Torre = 1, bisbo = 1, cavalo = 1, rainha;
+    char direcao1, direcao2;
 
+    
     printf("Movendo peças de Xadrez:\n");
     printf("Movendo a Torre...\n");
 
@@ -26,11 +26,22 @@ int main (){
     printf("Movendo a rainha...\n");
     // Mover Rainha 8 casas para a direita:
 
-    for (Rainha =1 ; Rainha < 8; Rainha++)
+    for (rainha =1 ; rainha < 8; rainha++)
     {
         printf("Direita\n");
     }
     
+    printf("Movendo o Cavalo\n");
+    //Mover cavalo em L (Duas casas para baixo e uma para esquerda)
+    while (cavalo--) 
+    {
+        for (int i = 0 ; i < 2; i++){
+            printf("Baixo\n");
+        }
+        printf("Esquerda\n");
+    }
+
+
     return 0;
 
 }
